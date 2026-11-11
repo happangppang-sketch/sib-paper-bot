@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIB 하드카본 논문 아카이브</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --card:#ffffff; --ink:#1d1d1b; --muted:#6b6a64; --line:#e4e2da;
+    --accent:#1f5f8b; --accent-soft:#e3eef6; --gold:#9a6b00; --gold-soft:#f8efd9;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#141413; --card:#1e1e1c; --ink:#ecebe6; --muted:#9d9c95; --line:#2f2f2c;
+      --accent:#7fb6dd; --accent-soft:#1d2d39; --gold:#e0b55a; --gold-soft:#332a17; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;line-height:1.55}
+  .wrap{max-width:860px;margin:0 auto;padding:40px 20px 80px}
+  header h1{font-size:28px;margin:0 0 6px;letter-spacing:-.02em}
+  header p{margin:0;color:var(--muted);font-size:14px}
+  .stats{display:flex;gap:10px;margin:22px 0 18px;flex-wrap:wrap}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 16px;min-width:120px}
+  .stat b{display:block;font-size:22px}
+  .stat span{font-size:12px;color:var(--muted)}
+  .tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px;position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:2}
+  .tools input,.tools select{font:inherit;font-size:14px;padding:9px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+  .tools input{flex:1;min-width:200px}
+  .day{margin:30px 0 12px;font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.04em;display:flex;align-items:center;gap:10px}
+  .day::after{content:"";flex:1;height:1px;background:var(--line)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:12px;transition:box-shadow .2s}
+  .card.hl{box-shadow:0 0 0 2px var(--accent)}
+  .meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:8px;font-size:12px}
+  .badge{padding:2px 8px;border-radius:999px;font-weight:700}
+  .new{background:var(--accent-soft);color:var(--accent)}
+  .classic{background:var(--gold-soft);color:var(--gold)}
+  .if{border:1px solid var(--line);color:var(--ink);cursor:help}
+  .card h2{font-size:17px;margin:0 0 6px;line-height:1.4}
+  .card h2 a{color:var(--ink);text-decoration:none}
+  .card h2 a:hover{color:var(--accent);text-decoration:underline}
+  .sub{font-size:13px;color:var(--muted);margin-bottom:8px}
+  .sum{font-size:14.5px;margin:6px 0}
+  details{margin-top:8px;font-size:14px}
+  summary{cursor:pointer;color:var(--accent);font-size:13px}
+  details ul{margin:8px 0;padding-left:20px}
+  .abs{color:var(--muted);font-size:13px;margin-top:6px}
+  .links{margin-top:10px;font-size:13px;display:flex;gap:14px}
+  .links a{color:var(--accent)}
+  .empty{color:var(--muted);text-align:center;padding:60px 0}
+  footer{margin-top:50px;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>📚 SIB 하드카본 음극재 논문 아카이브</h1>
+    <p>매일 아침 새 논문을 모아 제미나이로 요약해 쌓아 두는 곳</p>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><b id="sTotal">-</b><span>누적 논문</span></div>
+    <div class="stat"><b id="sToday">-</b><span>최근 업데이트에 추가</span></div>
+    <div class="stat"><b id="sUpdated">-</b><span>마지막 업데이트</span></div>
+  </div>
+
+  <div class="tools">
+    <input id="q" type="search" placeholder="제목·저널·요약 검색 (예: biomass, ICE, 1300)">
+    <select id="kind">
+      <option value="">전체</option>
+      <option value="new">🆕 최신 논문</option>
+      <option value="classic">⭐ 추천 논문</option>
+    </select>
+    <select id="sort">
+      <option value="added">수집일순</option>
+      <option value="published">게재일순</option>
+      <option value="impact">IF순</option>
+      <option value="score">관련도순</option>
+    </select>
+  </div>
+
+  <main id="list"><div class="empty">불러오는 중…</div></main>
+
+  <footer>
+    IF* = OpenAlex의 저널 '2년 평균 인용수'로, 임팩트팩터(JIF)와 같은 방식으로 계산한 근사값이에요. 공식 JCR 값과 조금 다를 수 있어요.<br>
+    논문 목록은 Crossref에서 가져오고, 요약은 제미나이가 초록을 바탕으로 작성합니다. 중요한 숫자는 원문으로 확인하세요.
+  </footer>
+</div>
+
+<script>
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let PAPERS = [];
+
+function card(p){
+  const kind = p.kind === "new" ? '<span class="badge new">🆕 최신</span>' : '<span class="badge classic">⭐ 추천</span>';
+  const imp = p.impact != null ? `<span class="badge if" title="${esc(p.impact_source || "")}">IF* ${esc(p.impact)}</span>` : "";
+  const score = p.score != null ? `<span class="badge if" title="제미나이 관련도 점수">관련도 ${esc(p.score)}/10</span>` : "";
+  const pts = (p.key_points || []).map(k => `<li>${esc(k)}</li>`).join("");
+  const more = (pts || p.why_read || p.abstract) ? `
+    <details><summary>자세히 보기</summary>
+      ${pts ? `<ul>${pts}</ul>` : ""}
+      ${p.why_read ? `<div>💡 ${esc(p.why_read)}</div>` : ""}
+      ${p.abstract ? `<div class="abs">${esc(p.abstract)}</div>` : ""}
+    </details>` : "";
+  return `<article class="card" id="${esc(p.id)}">
+    <div class="meta">${kind}${imp}${score}</div>
+    <h2><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a></h2>
+    <div class="sub">${esc(p.journal)} · ${esc(p.published || "")}${p.authors?.length ? " · " + esc(p.authors.slice(0,3).join(", ")) + (p.authors.length > 3 ? " 외" : "") : ""}</div>
+    ${p.summary_ko ? `<div class="sum">${esc(p.summary_ko)}</div>` : ""}
+    ${more}
+    <div class="links"><a href="${esc(p.url)}" target="_blank" rel="noopener">원문(DOI)</a>${p.notion_url ? `<a href="${esc(p.notion_url)}" target="_blank" rel="noopener">노션 요약</a>` : ""}</div>
+  </article>`;
+}
+
+function render(){
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const kind = document.getElementById("kind").value;
+  const sort = document.getElementById("sort").value;
+  let rows = PAPERS.filter(p => (!kind || p.kind === kind) &&
+    (!q || [p.title, p.journal, p.summary_ko, (p.key_points||[]).join(" "), p.abstract].join(" ").toLowerCase().includes(q)));
+  const list = document.getElementById("list");
+  if (!rows.length){ list.innerHTML = '<div class="empty">아직 표시할 논문이 없어요.</div>'; return; }
+
+  if (sort === "added"){
+    const groups = {};
+    rows.forEach(p => (groups[p.added] ||= []).push(p));
+    list.innerHTML = Object.keys(groups).sort().reverse()
+      .map(d => `<div class="day">${esc(d)} 수집 · ${groups[d].length}편</div>` + groups[d].map(card).join("")).join("");
+  } else {
+    const key = {published: p => p.published || "", impact: p => p.impact ?? -1, score: p => p.score ?? -1}[sort];
+    rows = [...rows].sort((a,b) => key(a) < key(b) ? 1 : key(a) > key(b) ? -1 : 0);
+    list.innerHTML = rows.map(card).join("");
+  }
+  const h = decodeURIComponent(location.hash.slice(1));
+  if (h){ const el = document.getElementById(h); if (el){ el.classList.add("hl"); el.scrollIntoView({block:"center"}); } }
+}
+
+fetch("papers.json?t=" + Date.now()).then(r => r.json()).then(d => {
+  PAPERS = d.papers || [];
+  document.getElementById("sTotal").textContent = PAPERS.length;
+  document.getElementById("sUpdated").textContent = d.updated || "-";
+  document.getElementById("sToday").textContent = PAPERS.filter(p => p.added === d.updated).length;
+  render();
+}).catch(() => { document.getElementById("list").innerHTML = '<div class="empty">papers.json을 불러오지 못했어요.</div>'; });
+
+["q","kind","sort"].forEach(id => document.getElementById(id).addEventListener("input", render));
+</script>
+</body>
+</html>
