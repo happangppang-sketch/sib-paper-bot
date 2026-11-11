@@ -13,18 +13,18 @@
   "and_any": ["sodium", "na-ion", "na+", "na ion", "sib", "sibs", "na-storage"],
 
   "lookback_days": 21,
-  "max_new_per_day": 5,
+  "max_new_per_day": 1,
   "min_relevance_score": 6,
 
   "fallback_when_no_new": true,
-  "fallback_count": 2,
+  "fallback_count": 1,
   "fallback_years": 5,
 
   "gemini_model": "gemini-flash-latest",
 
-  "kakao_max_messages": 5,
+  "kakao_max_messages": 1,
 
   "impact_factor_override": {
-    "_설명": "공식 JCR 임팩트팩터를 알면 '저널 이름': 숫자 형태로 적으세요. 여기 적은 값이 OpenAlex 근사값보다 우선합니다. 예) \"Carbon\": 0.0"
+    "_설명": "공식 JCR 임팩트팩터를 알면 '저널 이름': 숫자 형태로 적으세요. 여기 적은 값이 제미나이 답변보다 우선합니다. 예) \"Carbon\": 0.0"
   }
 }
