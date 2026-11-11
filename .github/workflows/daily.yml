@@ -2,7 +2,7 @@ name: 매일 SIB 하드카본 논문 수집
 
 on:
   schedule:
-    - cron: "47 22 * * *"   # 매일 한국시간 오전 7:47 (UTC 22:47). GitHub 사정으로 조금 늦어질 수 있음
+    - cron: "40 23 * * *"   # 한국시간 오전 8:40 시작 → GitHub 대기열 지연(보통 10~20분) 감안해 9시 전후 알림
   workflow_dispatch:         # Actions 탭에서 'Run workflow' 버튼으로 바로 실행
 
 permissions:
