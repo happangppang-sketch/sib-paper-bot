@@ -47,6 +47,45 @@ def _generate(key, model, prompt):
     return "".join(p.get("text", "") for p in parts)
 
 
+IF_PROMPT = """아래 학술지들의 Clarivate JCR 임팩트팩터(Journal Impact Factor)를 네가 아는 가장 최근 값으로 알려줘.
+확실하지 않거나 JCR에 등재되지 않은 저널이면 null로 해. 추측으로 숫자를 만들지 마.
+JSON 객체로만 답해. 형식: {{"저널 이름 그대로": 12.3, "다른 저널": null}}
+
+저널 목록:
+{names}
+"""
+
+
+def journal_ifs(names, cfg):
+    """저널 이름 목록 → {이름: IF 숫자 또는 None} (제미나이가 아는 JCR 값)."""
+    key = os.environ.get("GEMINI_API_KEY")
+    if not key or not names:
+        return {}
+    model = cfg.get("gemini_model", "gemini-flash-latest")
+    prompt = IF_PROMPT.format(names="\n".join(f"- {n}" for n in names))
+    try:
+        try:
+            text = _generate(key, model, prompt)
+        except HttpError as e:
+            if e.status != 404:
+                raise
+            text = _generate(key, _pick_model(key), prompt)
+        data = json.loads(text)
+    except Exception as e:
+        log("제미나이 IF 조회 실패:", e)
+        return {}
+    out = {}
+    for n in names:
+        v = data.get(n)
+        if v is None:  # 이름 표기가 살짝 다르게 돌아온 경우
+            v = next((val for k, val in data.items() if k.lower() == n.lower()), None)
+        try:
+            out[n] = round(float(v), 1) if v is not None else None
+        except (TypeError, ValueError):
+            out[n] = None
+    return out
+
+
 def review(papers, cfg):
     """papers 리스트를 받아 각 논문에 relevant/score/summary_ko 등을 붙여서 돌려줌.
     제미나이 키가 없거나 실패하면 키워드 필터 결과만 사용(요약 없이)."""
