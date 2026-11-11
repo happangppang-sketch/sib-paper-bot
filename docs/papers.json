@@ -2,6 +2,164 @@
   "updated": "2026-11-11",
   "papers": [
     {
+      "doi": "10.1149/1945-7111/aebe72",
+      "title": "Rosewood-Derived Hard Carbon with a Tailored Microstructure as a High-Performance Anode for Sodium-Ion Batteries",
+      "journal": "Journal of The Electrochemical Society",
+      "issn": "0013-4651",
+      "published": "2026-11-05",
+      "authors": [
+        "Zhibiao Li",
+        "Chuwen Liang",
+        "Yunlong Pei",
+        "Jiaming Zhang",
+        "Lianyi Shao",
+        "Zhipeng Sun"
+      ],
+      "abstract": "Abstract Biomass-derived hard carbon has attracted extensive attention as a sustainable anode material for sodium-ion batteries (SIBs), yet simultaneously achieving high initial Coulombic efficiency (ICE) and large low-voltage plateau capacity remains challenging because both are strongly governed by carbon microstructure evolution during pyrolysis. Herein, waste rosewood is regulated through time-controlled alkaline treatment combined with multistage carbonization to balance surface stabilization and internal structural evolution. Moderate hemicellulose removal suppresses disordered surface defects and oxygen-rich unstable sites, leading to a compact carbon surface with reduced irreversible sodium consumption. Meanwhile, multistage carbonization promotes graphitic rearrangement and internal nanopore development for plateau sodium storage. Consequently, AMHC-5 delivers a reversible capacity of 325.2 mAh g−1 with an ICE of 90.0% at 0.1 A g−1 and a plateau capacity of 219.6 mAh g−1. Electrochemical measurements and in situ Raman and impedance analyses reveal sequential sodium storage involving adsorption, intercalation, and pore filling. A full cell paired with Na3V2(PO4)3 retains 85.6% of its capacity after 100 cycles. This work clarifies the relationship between precursor composition, carbon evolution, and sodium-storage behavior, offering a simple route for designing advanced biomass-derived hard carbon anodes for SIBs.",
+      "url": "https://doi.org/10.1149/1945-7111/aebe72",
+      "citations": 0,
+      "score": 9.2,
+      "summary_ko": "장미목 유래 하드카본의 알칼리 처리 및 다단계 탄화로 0.1 A g-1에서 325.2 mAh g-1, ICE 90.0%, 평탄 용량 219.6 mAh g-1 달성.",
+      "key_points": [
+        "헤미셀룰로오스 제거로 표면 결함과 산소 작용기를 줄여 비가역 Na 소비 억제",
+        "다단계 탄화를 통해 흑연질 재배열 및 내부 나노기공 형성 유도",
+        "Na3V2(PO4)3와 조립한 풀셀에서 100사이클 후 85.6% 용량 유지율 달성"
+      ],
+      "why_read": "바이오매스 하드카본에서 매우 달성하기 힘든 90.0%의 높은 ICE와 큰 평탄 용량을 전처리 및 탄화 공정으로 동시에 구현한 우수 연구입니다.",
+      "kind": "new",
+      "impact": null,
+      "impact_source": null,
+      "added": "2026-11-11",
+      "id": "rosewoodderivedhardcarbonwithatailoredmicrostructureasahighp"
+    },
+    {
+      "doi": "10.1021/acssuschemeng.6c08212",
+      "title": "Tailoring Microstructure of Lignin-Derived Hard Carbon Nanofibers via Molecular Stitching for Enhanced Sodium-Ion Storage",
+      "journal": "ACS Sustainable Chemistry & Engineering",
+      "issn": "2168-0485",
+      "published": "2026-11-03",
+      "authors": [
+        "Meiqing Kuang",
+        "Xinghua Su",
+        "Siyan Liu",
+        "Xinyi Zhou",
+        "Lixin Song",
+        "Jie Xiong"
+      ],
+      "abstract": "Abstract Renewable lignin is an attractive biomass precursor for sustainable hard carbon in sodium-ion batteries (SIBs) owing to its renewability, high carbon yield, and intrinsically molecular disordered structure. However, severe structural collapse during carbonization and low initial coulombic efficiency (ICE) hinder its practical application. Herein, an integrated strategy of PMDA-mediated molecular stitching and electrospinning with PVP as a fiber-forming aid was used to fabricate binder-free, self-supporting lignin-derived carbon nanofibers (LCNFs). With an optical PMDA content of 10 wt %, LCNF-P10 forms a robust three-dimensional cross-linked network through in situ esterification, effectively suppressing structural collapse during carbonization. Meanwhile, the synergistic effect of molecular stitching and PVP-derived pore engineering generates a highly disordered carbon framework with enlarged interlayer spacing (0.381 nm), hierarchical porosity, and abundant closed nanopores, thereby promoting low-voltage sodium storage. Consequently, LCNF-P10 delivers a high reversible capacity of 374.7 mAh g–1, an exceptional ICE of 89.39%, good rate capability, and excellent long-term cycling stability. The full cell assembled with a Na3V2(PO4)3 cathode achieves a high energy density of 240 Wh kg–1. This work demonstrates a sustainable molecular engineering strategy for converting renewable lignin into high-performance, freestanding hard carbon electrodes, providing new insights into the scalable utilization of biomass resources for practical sodium-ion batteries.",
+      "url": "https://doi.org/10.1021/acssuschemeng.6c08212",
+      "citations": 0,
+      "score": 9.1,
+      "summary_ko": "PMDA 10 wt% 분자 스티칭으로 층간 간격 0.381 nm를 확보하여 374.7 mAh g-1, ICE 89.39%를 달성한 자립형 리그닌 하드카본 연구.",
+      "key_points": [
+        "PMDA 가교 결합을 통해 탄화 중 리그닌 섬유의 열적 구조 붕괴를 억제",
+        "층간 간격 0.381 nm 및 계층적 나노폐기공 형성을 통한 저전압 저장 촉진",
+        "374.7 mAh g-1, ICE 89.39%, NVP 풀셀 기준 240 Wh kg-1 달성"
+      ],
+      "why_read": "리그닌 기반 하드카본의 고질적 단점인 구조 붕괴와 낮은 ICE를 분자 가교(molecular stitching)로 극복한 완성도 높은 논문입니다.",
+      "kind": "new",
+      "impact": null,
+      "impact_source": null,
+      "added": "2026-11-11",
+      "id": "tailoringmicrostructureofligninderivedhardcarbonnanofibersvi"
+    },
+    {
+      "doi": "10.1016/j.ensm.2026.105639",
+      "title": "Boron-driven closed-pore formation and interphase stabilization in hard carbon anodes for sodium-ion batteries",
+      "journal": "Energy Storage Materials",
+      "issn": "2405-8297",
+      "published": "2026-11-01",
+      "authors": [
+        "Guopan Ren",
+        "Yuhang Wang",
+        "Kexin Tang",
+        "Yide Qiao",
+        "Gege Long",
+        "Rong Tang",
+        "et al."
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.ensm.2026.105639",
+      "citations": 0,
+      "score": 9,
+      "summary_ko": "(초록 없음) 붕소(B) 도핑으로 유도된 폐쇄기공 형성과 계면 안정을 통한 SIB 하드카본 성능 향상.",
+      "key_points": [
+        "붕소 헤테로원자 도입을 통한 하드카본 폐쇄기공 형성 메커니즘",
+        "폐쇄기공 증가를 통한 나트륨 저장 고원 영역(plateau) 용량 개선 가능성",
+        "전해질과의 계면 안정화를 통한 SEI 최적화 연구"
+      ],
+      "why_read": "이종원소 도핑이 하드카본 폐쇄기공 형성과 계면 안정성에 미치는 최신 메커니즘을 파악하기에 우수한 논문입니다.",
+      "kind": "new",
+      "impact": null,
+      "impact_source": null,
+      "added": "2026-11-11",
+      "id": "borondrivenclosedporeformationandinterphasestabilizationinha"
+    },
+    {
+      "doi": "10.1002/smll.76471",
+      "title": "Programming Closed Pores in Hard Carbon Anodes via Alcohol‐Regulated Interfacial Assembly for High‐Rate and Durable Sodium‐Ion Storage",
+      "journal": "Small",
+      "issn": "1613-6810",
+      "published": "2026-10-31",
+      "authors": [
+        "Senchuan Huang",
+        "Qihang Huang",
+        "Kewei Pei",
+        "Wenyi Chen",
+        "Yangfei Cao",
+        "Meng Li",
+        "et al."
+      ],
+      "abstract": "ABSTRACT Closed pores are widely recognized as the primary structural domains responsible for the low‐voltage plateau capacity of hard carbon anodes for sodium‐ion batteries (SIBs). However, current strategies for constructing closed pores predominantly rely on post‐carbonization reconstruction, offering limited control over pore accessibility and interfacial chemistry. Here we demonstrate that closed pores can instead be programmed during the precursor assembly process via an alcohol‐regulated interfacial assembly strategy. By systematically modulating the alcohol/water solvent environment, hydrogen‐bond interactions, micelle swelling behavior, and pyrrole polymerization kinetics are cooperatively regulated, enabling programmable precursor confinement and the subsequent transformation of micelle‐pyrrole assemblies into closed‐pore‐rich hard carbons during carbonization. The optimized hard carbon exhibits abundant closed ultramicropores that not only facilitate the quasi‐metallic sodium cluster filling but also promote the formation of a thin inorganic‐rich solid electrolyte interphase (SEI) layer, thereby accelerating sodium‐storage kinetics. As a result, it delivers an outstanding rate capability of 119 mAh g −1 at 10 A g −1 and robust cycling stability over 6000 cycles at 5 A g −1 , as well as excellent low‐temperature performance at −20°C. This work establishes precursor organization programming as a general strategy for constructing closed pores in hard carbon materials toward fast‐charging and long‐life SIBs.",
+      "url": "https://doi.org/10.1002/smll.76471",
+      "citations": 0,
+      "score": 9,
+      "summary_ko": "알코올 조절 계면조립으로 폐쇄기공을 프로그래밍해 10 A/g서 119 mAh/g, 6000회 안정을 달성.",
+      "key_points": [
+        "알코올/물 용매 조절을 통해 피롤 중합 및 미셀 조립을 제어하여 폐쇄기공 형성 유도",
+        "풍부한 폐쇄 극미세공이 준금속 나트륨 클러스터 충진 및 얇은 무기질 SEI 형성 촉진",
+        "10 A g-1에서 119 mAh g-1, 5 A g-1에서 6000사이클 및 -20°C 저온 특성 확보"
+      ],
+      "why_read": "탄화 전 전구체 계면 조립 단계에서 하드카본의 핵심인 폐쇄기공을 정밀 설계하는 새로운 합성 전략을 배울 수 있습니다.",
+      "kind": "new",
+      "impact": null,
+      "impact_source": null,
+      "added": "2026-11-11",
+      "id": "programmingclosedporesinhardcarbonanodesviaalcoholregulatedi"
+    },
+    {
+      "doi": "10.3389/fchem.2026.1978945",
+      "title": "Hard carbon anodes for sodium-ion batteries: from mechanistic reconciliation, precursor-tailored microstructure regulation to industrial scale-up",
+      "journal": "Frontiers in Chemistry",
+      "issn": "2296-2646",
+      "published": "2026-10-29",
+      "authors": [
+        "Yong-Gang Sun",
+        "Jin-Yi Ding",
+        "Jian Xiong",
+        "Yi-Han Zhang",
+        "Hao-Jie Fan",
+        "Yi-Cong Xie",
+        "et al."
+      ],
+      "abstract": "Hard carbon is the leading anode candidate for sodium-ion batteries, yet its practical deployment remains constrained by three interconnected gaps: the sodium storage mechanism is disputed across competing models, no precursor classification framework links chemical composition to electrochemical function, and predictive structure–property relationships remain largely empirical. This review traces the precursor-to-performance pipeline. We show that the insertion-filling, adsorption-insertion, and adsorption-filling models converge on a multi-stage adsorption-intercalation-filling paradigm, where the intercalation-to-filling balance is governed by carbonization temperature, precursor chemistry, and pore architecture rather than by a single mechanism. We then introduce a three-dimensional precursor classification framework—spanning scalability, structural controllability, and performance ceiling—and deconvolute the component-specific pyrolysis pathways of cellulose, hemicellulose, and lignin to establish how molecular architecture is transmitted into carbon microstructure. Three microstructure engineering levers are critically evaluated: pore-structure manipulation to resolve the low-surface-area/high-closed-pore-volume trade-off, interlayer-spacing regulation via heteroatom doping and pre-oxidation, and defect engineering guided by the conductivity-capacity Pareto Frontier. The rapid industrialization of hard carbon—from laboratory discovery to 10,000-ton-scale manufacturing—is assessed, documenting how precursor diversification and process innovation have driven costs toward parity with graphite anodes. Finally, the current challenges and future development directions of high-performance and industrializable hard carbon anodes are prospected, aiming to provide systematic theoretical guidance and technical references for the further design, modification and large-scale application of hard carbon materials in advanced sodium-ion batteries.",
+      "url": "https://doi.org/10.3389/fchem.2026.1978945",
+      "citations": 0,
+      "score": 9,
+      "summary_ko": "흡착-삽입-충진 통합 메커니즘과 전구체 3D 분류 체계 및 1만톤 규모 양산화 방향을 제시한 총설.",
+      "key_points": [
+        "나트륨 저장 메커니즘을 '다단계 흡착-삽입-충진' 패러다임으로 통합 정리",
+        "셀룰로오스, 헤미셀룰로오스, 리그닌의 성분별 열분해 경로 및 3D 전구체 분류 프레임워크 제시",
+        "폐쇄기공 제어, 층간거리 조절, 결함 엔지니어링 및 1만 톤급 상용화 공정 이슈 고찰"
+      ],
+      "why_read": "하드카본의 저장 메커니즘 논쟁부터 바이오매스 성분 제어 및 대량 생산까지 전 과정을 완벽히 정리한 필독 총설입니다.",
+      "kind": "new",
+      "impact": null,
+      "impact_source": null,
+      "added": "2026-11-11",
+      "id": "hardcarbonanodesforsodiumionbatteriesfrommechanisticreconcil"
+    },
+    {
       "doi": "10.1038/s41467-023-39637-5",
       "title": "Revealing the closed pore formation of waste wood-derived hard carbon for advanced sodium-ion battery",
       "journal": "Nature Communications",
