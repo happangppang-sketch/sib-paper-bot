@@ -1,0 +1,68 @@
+name: 매일 SIB 하드카본 논문 수집
+
+on:
+  schedule:
+    - cron: "47 22 * * *"   # 매일 한국시간 오전 7:47 (UTC 22:47). GitHub 사정으로 조금 늦어질 수 있음
+  workflow_dispatch:         # Actions 탭에서 'Run workflow' 버튼으로 바로 실행
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-papers
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 논문 수집 + 중복 제거 + 제미나이 요약 + 노션 정리
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_PARENT_PAGE_ID: ${{ secrets.NOTION_PARENT_PAGE_ID }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          CROSSREF_MAILTO: ${{ secrets.CROSSREF_MAILTO }}
+        run: python scripts/run_daily.py collect
+
+      - name: 결과 저장(웹사이트 갱신)
+        run: |
+          git config user.name "paper-bot"
+          git config user.email "paper-bot@users.noreply.github.com"
+          git add docs data
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "📚 논문 업데이트 $(TZ=Asia/Seoul date +%F)"
+            git push
+          fi
+
+      - name: 웹사이트 반영 기다리기
+        run: sleep 60
+
+      - name: 카카오톡 알림
+        env:
+          KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
+          KAKAO_CLIENT_SECRET: ${{ secrets.KAKAO_CLIENT_SECRET }}
+          KAKAO_REFRESH_TOKEN: ${{ secrets.KAKAO_REFRESH_TOKEN }}
+        run: python scripts/run_daily.py notify
+
+      - name: 카카오 refresh token 자동 교체 (2달 만료 대비)
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          f="$RUNNER_TEMP/new_refresh_token"
+          if [ -f "$f" ] && [ -n "$GH_TOKEN" ]; then
+            gh secret set KAKAO_REFRESH_TOKEN --repo "$GITHUB_REPOSITORY" < "$f"
+            echo "KAKAO_REFRESH_TOKEN 교체 완료"
+          elif [ -f "$f" ]; then
+            echo "::warning::새 카카오 refresh token이 왔지만 GH_PAT가 없어 저장하지 못했어요. README의 GH_PAT 설정을 해 주세요."
+          fi
