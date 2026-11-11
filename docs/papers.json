@@ -1,1 +1,38 @@
-{"updated": null, "papers": []}
+{
+  "updated": "2026-11-11",
+  "papers": [
+    {
+      "doi": "10.1038/s41467-023-39637-5",
+      "title": "Revealing the closed pore formation of waste wood-derived hard carbon for advanced sodium-ion battery",
+      "journal": "Nature Communications",
+      "issn": "2041-1723",
+      "published": "2023-09-27",
+      "authors": [
+        "Zheng Tang",
+        "Rui Zhang",
+        "Haiyan Wang",
+        "Siyu Zhou",
+        "Zhiyi Pan",
+        "Yuancheng Huang",
+        "et al."
+      ],
+      "abstract": "Abstract Although the closed pore structure plays a key role in contributing low-voltage plateau capacity of hard carbon anode for sodium-ion batteries, the formation mechanism of closed pores is still under debate. Here, we employ waste wood-derived hard carbon as a template to systematically establish the formation mechanisms of closed pores and their effect on sodium storage performance. We find that the high crystallinity cellulose in nature wood decomposes to long-range carbon layers as the wall of closed pore, and the amorphous component can hinder the graphitization of carbon layer and induce the crispation of long-range carbon layers. The optimized sample demonstrates a high reversible capacity of 430 mAh g −1 at 20 mA g −1 (plateau capacity of 293 mAh g −1 for the second cycle), as well as good rate and stable cycling performances (85.4% after 400 cycles at 500 mA g −1 ). Deep insights into the closed pore formation will greatly forward the rational design of hard carbon anode with high capacity.",
+      "url": "https://doi.org/10.1038/s41467-023-39637-5",
+      "citations": 879,
+      "score": 9,
+      "summary_ko": "폐목재 기반 하드카본의 폐기공 메커니즘을 규명해 430 mAh g-1 가역용량 및 400회 85.4% 유지를 달성함.",
+      "key_points": [
+        "결정질 셀룰로오스가 기공 벽을 형성하고 무정형 성분이 흑연화를 억제함",
+        "20 mA g-1에서 430 mAh g-1의 높은 가역용량 달성",
+        "2번째 사이클에서 293 mAh g-1의 평탄 영역 용량 발현",
+        "500 mA g-1 전류밀도에서 400사이클 후 85.4%의 수명 유지율 기록"
+      ],
+      "why_read": "바이오매스 전구체 성분이 폐기공 형성에 미치는 메커니즘을 명확히 규명하여 고용량 하드카본 미세구조 설계에 큰 도움이 됩니다.",
+      "kind": "classic",
+      "impact": null,
+      "impact_source": null,
+      "added": "2026-11-11",
+      "id": "revealingtheclosedporeformationofwastewoodderivedhardcarbonf"
+    }
+  ]
+}
