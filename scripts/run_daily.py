@@ -4,13 +4,14 @@
   python scripts/run_daily.py notify    # (웹사이트 반영 후) 카카오톡 알림
 """
 import sys
+from datetime import timedelta
 
 import gemini
 import kakao
 import notion
 import sources
 from common import (LAST_RUN_PATH, PAPERS_PATH, load_config, load_json, log,
-                    norm_doi, norm_title, save_json, today_str)
+                    norm_doi, norm_title, now_kst, save_json, today_str)
 
 
 def load_store():
@@ -45,6 +46,28 @@ def pick(candidates, cfg, seen_dois, seen_titles, limit, kind):
     return good[:limit]
 
 
+def attach_impact(papers, cfg, cache):
+    """IF 붙이기: 1순위 config.json 직접 입력값, 2순위 제미나이가 아는 JCR 값.
+    제미나이 답은 저널별로 data/journals.json에 저장해 두고 180일 동안 재사용
+    (매일 숫자가 바뀌지 않게)."""
+    override = {k.lower(): v for k, v in cfg.get("impact_factor_override", {}).items()
+                if not k.startswith("_")}
+    stale_before = (now_kst() - timedelta(days=180)).strftime("%Y-%m-%d")
+    need = sorted({p["journal"] for p in papers if p["journal"]
+                   and p["journal"].lower() not in override
+                   and cache.get("gemini:" + p["journal"].lower(), {}).get("checked", "") < stale_before})
+    for name, val in gemini.journal_ifs(need, cfg).items():
+        cache["gemini:" + name.lower()] = {"value": val, "journal": name, "checked": today_str()}
+    for p in papers:
+        j = p["journal"].lower()
+        if j in override:
+            p["impact"], p["impact_source"] = round(float(override[j]), 1), "JCR(직접 입력)"
+        else:
+            val = cache.get("gemini:" + j, {}).get("value")
+            p["impact"] = val
+            p["impact_source"] = "JCR 임팩트팩터(제미나이 답변, 추정)" if val is not None else None
+
+
 def collect():
     cfg = load_config()
     store = load_store()
@@ -66,8 +89,9 @@ def collect():
 
     cache = sources.load_journal_cache()
     today = today_str()
+    # 오늘 논문 + 예전에 IF가 비어 있던 논문까지 같이 채움
+    attach_impact(chosen + [p for p in store["papers"] if p.get("impact") is None], cfg, cache)
     for p in chosen:
-        p["impact"], p["impact_source"] = sources.impact_for(p, cfg, cache)
         p["added"] = today
         p["id"] = norm_title(p["title"])[:60]
         p.pop("relevant", None)
