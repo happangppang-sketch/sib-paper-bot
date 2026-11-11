@@ -46,14 +46,13 @@ def _to_paper(item):
     }
 
 
-def _crossref(query, rows, sort, from_date, until_date=None):
-    filt = f"from-pub-date:{from_date},type:journal-article"
-    if until_date:
-        filt += f",until-pub-date:{until_date}"
+def _crossref(query, rows, filt):
+    # 정렬은 항상 '검색어 관련도'순. (게재일순으로 정렬하면 2114년 같은 엉터리
+    # 미래 날짜가 붙은 기록이 위를 다 차지해서 진짜 논문이 안 잡힘)
     params = {
         "query.bibliographic": query,
-        "filter": filt,
-        "sort": sort,
+        "filter": filt + ",type:journal-article",
+        "sort": "relevance",
         "order": "desc",
         "rows": rows,
         "select": SELECT,
@@ -73,12 +72,14 @@ def keyword_ok(paper, cfg):
 
 
 def search_recent(cfg):
-    """최근 lookback_days 일 안에 나온 논문 검색."""
+    """최근 lookback_days 일 안에 새로 등록된(DOI 발급된) 논문 검색."""
     from_date = (now_kst() - timedelta(days=cfg["lookback_days"])).strftime("%Y-%m-%d")
+    until = now_kst().strftime("%Y-%m-%d")
+    filt = f"from-created-date:{from_date},until-created-date:{until}"
     found = {}
     for q in cfg["search_queries"]:
         try:
-            for p in _crossref(q, rows=60, sort="published", from_date=from_date):
+            for p in _crossref(q, rows=100, filt=filt):
                 if keyword_ok(p, cfg):
                     found.setdefault(p["doi"], p)
         except Exception as e:  # 하나 실패해도 나머지 검색은 계속
@@ -92,11 +93,12 @@ def search_classics(cfg):
     now = now_kst()
     from_date = f"{now.year - cfg['fallback_years']}-01-01"
     until = (now - timedelta(days=cfg["lookback_days"])).strftime("%Y-%m-%d")
+    filt = f"from-pub-date:{from_date},until-pub-date:{until}"
     found = {}
     for q in cfg["search_queries"]:
         try:
-            for p in _crossref(q, rows=60, sort="is-referenced-by-count",
-                               from_date=from_date, until_date=until):
+            # 관련도순으로 넉넉히 받은 뒤, 아래에서 인용 수로 다시 정렬
+            for p in _crossref(q, rows=100, filt=filt):
                 if keyword_ok(p, cfg):
                     found.setdefault(p["doi"], p)
         except Exception as e:
