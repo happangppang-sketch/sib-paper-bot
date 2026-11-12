@@ -1,6 +1,34 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "papers": [
+    {
+      "doi": "10.1016/j.cej.2026.183833",
+      "title": "Pre-desolvation of Na+ by spatial confinement of hard carbon to construct NaPO2F2-rich SEI layer for high-rate performances of sodium ion battery",
+      "journal": "Chemical Engineering Journal",
+      "issn": "1385-8947",
+      "published": "2026-12-01",
+      "authors": [
+        "Yixuan Mao",
+        "Hao Liu",
+        "Lijing Xie",
+        "Liqin Dai",
+        "Yilin Wang",
+        "Jiayao Cheng",
+        "et al."
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.cej.2026.183833",
+      "citations": 0,
+      "score": null,
+      "summary_ko": "",
+      "key_points": [],
+      "why_read": "",
+      "kind": "new",
+      "impact": null,
+      "impact_source": null,
+      "added": "2026-11-12",
+      "id": "predesolvationofnabyspatialconfinementofhardcarbontoconstruc"
+    },
     {
       "doi": "10.1016/j.carbon.2026.122276",
       "title": "Unveiling nontrivial thermally driven open-to-closed pore transition in ultrahigh-molecular-weight polyacrylonitrile-based superstructure hard carbon for advanced sodium-ion batteries",
