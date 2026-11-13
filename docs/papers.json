@@ -1,6 +1,33 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "papers": [
+    {
+      "doi": "10.1016/j.etran.2026.100647",
+      "title": "Mechanistic insights into thermal safety degradation driven by overcharge-induced electrical damage in hard carbon /Na(Ni1/3Fe1/3Mn1/3)O2 sodium-ion batteries",
+      "journal": "eTransportation",
+      "issn": "2590-1168",
+      "published": "2026-12-01",
+      "authors": [
+        "Guangxu Zhang",
+        "Qi Kang",
+        "Kui Chen",
+        "Xuezhe Wei",
+        "Jiangong Zhu",
+        "Haifeng Dai"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.etran.2026.100647",
+      "citations": 0,
+      "score": null,
+      "summary_ko": "",
+      "key_points": [],
+      "why_read": "",
+      "kind": "new",
+      "impact": null,
+      "impact_source": null,
+      "added": "2026-11-13",
+      "id": "mechanisticinsightsintothermalsafetydegradationdrivenbyoverc"
+    },
     {
       "doi": "10.1016/j.cej.2026.183833",
       "title": "Pre-desolvation of Na+ by spatial confinement of hard carbon to construct NaPO2F2-rich SEI layer for high-rate performances of sodium ion battery",
