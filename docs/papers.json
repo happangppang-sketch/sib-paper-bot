@@ -1,6 +1,34 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "papers": [
+    {
+      "doi": "10.1016/j.pmatsci.2026.101886",
+      "title": "Biomass-derived hard carbon for sodium-ion batteries: From microstructure engineering to commercial sustainability",
+      "journal": "Progress in Materials Science",
+      "issn": "0079-6425",
+      "published": "2027-04-01",
+      "authors": [
+        "Qian Zhao",
+        "Ruixi Shen",
+        "Wanke Cheng",
+        "Zhiwen Wang",
+        "Guotao Sun",
+        "Fang Gu",
+        "et al."
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.pmatsci.2026.101886",
+      "citations": 0,
+      "score": null,
+      "summary_ko": "",
+      "key_points": [],
+      "why_read": "",
+      "kind": "new",
+      "impact": null,
+      "impact_source": null,
+      "added": "2026-11-14",
+      "id": "biomassderivedhardcarbonforsodiumionbatteriesfrommicrostruct"
+    },
     {
       "doi": "10.1016/j.etran.2026.100647",
       "title": "Mechanistic insights into thermal safety degradation driven by overcharge-induced electrical damage in hard carbon /Na(Ni1/3Fe1/3Mn1/3)O2 sodium-ion batteries",
