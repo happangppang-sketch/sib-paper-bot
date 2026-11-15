@@ -1,6 +1,34 @@
 {
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "papers": [
+    {
+      "doi": "10.1016/j.est.2026.125585",
+      "title": "Advances in hard carbon anodes for sodium-ion batteries: Synergistic effects, precursors, and structural engineering",
+      "journal": "Journal of Energy Storage",
+      "issn": "2352-152X",
+      "published": "2027-01-01",
+      "authors": [
+        "Wang Wang",
+        "Rong Yang",
+        "Jiashuai Ruan",
+        "Zhiwen Zhang",
+        "Xifei Li",
+        "Ying Liu",
+        "et al."
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.est.2026.125585",
+      "citations": 0,
+      "score": null,
+      "summary_ko": "",
+      "key_points": [],
+      "why_read": "",
+      "kind": "new",
+      "impact": null,
+      "impact_source": null,
+      "added": "2026-11-15",
+      "id": "advancesinhardcarbonanodesforsodiumionbatteriessynergisticef"
+    },
     {
       "doi": "10.1016/j.pmatsci.2026.101886",
       "title": "Biomass-derived hard carbon for sodium-ion batteries: From microstructure engineering to commercial sustainability",
