@@ -1,6 +1,37 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "papers": [
+    {
+      "doi": "10.1016/j.jechem.2026.10.058",
+      "title": "Hard carbon anodes for sodium-ion batteries: from sodium storage mechanisms to multi-dimensional performance optimization strategies",
+      "journal": "Journal of Energy Chemistry",
+      "issn": "2095-4956",
+      "published": "2026-11-01",
+      "authors": [
+        "Gaoyun Liu",
+        "Wangbing Wang",
+        "Niyizhen Wu",
+        "Quanping Fang",
+        "Jiasong Peng",
+        "Yongming Lai",
+        "et al."
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.jechem.2026.10.058",
+      "citations": 0,
+      "score": 9.0,
+      "summary_ko": "(초록 없음) SIB 하드카본의 나트륨 저장 메커니즘과 다차원 성능 최적화 전략 리뷰.",
+      "key_points": [
+        "저명 학술지(JEC)에 게재된 하드카본 음극 최신 포괄적 리뷰",
+        "나트륨 저장 메커니즘 규명부터 다차원적 성능 제어 기술 종합"
+      ],
+      "why_read": "하드카본 음극 연구의 기본 이론과 최신 최적화 전략을 체계적으로 조망할 수 있는 필독 리뷰 논문입니다.",
+      "kind": "new",
+      "impact": null,
+      "impact_source": null,
+      "added": "2026-11-16",
+      "id": "hardcarbonanodesforsodiumionbatteriesfromsodiumstoragemechan"
+    },
     {
       "doi": "10.1016/j.est.2026.125585",
       "title": "Advances in hard carbon anodes for sodium-ion batteries: Synergistic effects, precursors, and structural engineering",
