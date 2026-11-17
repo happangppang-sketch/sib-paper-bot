@@ -1,6 +1,34 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "papers": [
+    {
+      "doi": "10.3390/batteries12110491",
+      "title": "Waste-PET-Derived Nitrogen-Doped Hard Carbon for Sodium-Ion Batteries: A Comparative Study",
+      "journal": "Batteries",
+      "issn": "2313-0105",
+      "published": "2026-11-16",
+      "authors": [
+        "Qiran Lu",
+        "Weinan Zhao",
+        "Saeed Habibpour",
+        "Aklilu Getnet Messele",
+        "Yi He",
+        "Tizazu H. Mekonnen",
+        "et al."
+      ],
+      "abstract": "Sodium-ion batteries (SIBs) are regarded as a promising alternative to lithium-ion batteries (LIBs). However, their advancement is constrained by the sluggish kinetics and modest capacity of conventional hard carbon (HC) anodes. Here, we report an upcycling strategy that transforms post-consumer polyethylene terephthalate (PET) bottles into nitrogen-doped hard carbon (NHC) through KOH-assisted pyrolysis followed by a separate urea-assisted nitrogen-doping treatment. The resulting NHC exhibits enlarged interlayer spacing and incorporates nitrogen into the carbon structure. Benefiting from this tailored architecture, the optimized NHC-800 delivers a high reversible capacity of 310.7 mAh g−1 at 20 mA g−1 over 874 cycles. Furthermore, a comparative mechanistic investigation of HC, NHC, reduced graphene oxide (rGO), and carboxyl-functionalized multi-walled carbon nanotubes (MWCNTs-COOH) reveals architecture-dependent sodium-storage pathways, ranging from intersheet diffusion in rGO and kinetically asymmetric storage in oxidized nanotubes to adsorption–intercalation–nanopore filling in hard carbons. This study not only elucidates the principles of rational defect and spacing engineering for developing high-performance SIB anodes but also demonstrates a strategy to upcycle plastic waste, thereby reducing the landfill burden and mitigating dependence on critical lithium resources.",
+      "url": "https://doi.org/10.3390/batteries12110491",
+      "citations": 0,
+      "score": null,
+      "summary_ko": "",
+      "key_points": [],
+      "why_read": "",
+      "kind": "new",
+      "impact": null,
+      "impact_source": null,
+      "added": "2026-11-17",
+      "id": "wastepetderivednitrogendopedhardcarbonforsodiumionbatteriesa"
+    },
     {
       "doi": "10.1016/j.jechem.2026.10.058",
       "title": "Hard carbon anodes for sodium-ion batteries: from sodium storage mechanisms to multi-dimensional performance optimization strategies",
