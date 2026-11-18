@@ -1,6 +1,33 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "papers": [
+    {
+      "doi": "10.1016/j.est.2026.125660",
+      "title": "NaF-rich SEI enabled by DEP·PF6 ionic liquid additive for stable hard carbon anodes of sodium-ion batteries in carbonate electrolyte",
+      "journal": "Journal of Energy Storage",
+      "issn": "2352-152X",
+      "published": "2027-01-01",
+      "authors": [
+        "Dexi Meng",
+        "YuTeng Feng",
+        "Yan Wang",
+        "Shixiong Sun",
+        "Zhibin Lu",
+        "Junwei Lang"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1016/j.est.2026.125660",
+      "citations": 0,
+      "score": null,
+      "summary_ko": "",
+      "key_points": [],
+      "why_read": "",
+      "kind": "new",
+      "impact": null,
+      "impact_source": null,
+      "added": "2026-11-18",
+      "id": "nafrichseienabledbydeppf6ionicliquidadditiveforstablehardcar"
+    },
     {
       "doi": "10.3390/batteries12110491",
       "title": "Waste-PET-Derived Nitrogen-Doped Hard Carbon for Sodium-Ion Batteries: A Comparative Study",
