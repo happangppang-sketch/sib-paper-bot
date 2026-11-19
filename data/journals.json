@@ -1,1 +1,67 @@
-{}
+{
+  "gemini:acs sustainable chemistry & engineering": {
+    "value": 7.1,
+    "journal": "ACS Sustainable Chemistry & Engineering",
+    "checked": "2026-11-19"
+  },
+  "gemini:batteries": {
+    "value": 4.6,
+    "journal": "Batteries",
+    "checked": "2026-11-19"
+  },
+  "gemini:carbon": {
+    "value": 10.5,
+    "journal": "Carbon",
+    "checked": "2026-11-19"
+  },
+  "gemini:chemical engineering journal": {
+    "value": 13.3,
+    "journal": "Chemical Engineering Journal",
+    "checked": "2026-11-19"
+  },
+  "gemini:energy storage materials": {
+    "value": 18.9,
+    "journal": "Energy Storage Materials",
+    "checked": "2026-11-19"
+  },
+  "gemini:frontiers in chemistry": {
+    "value": 3.8,
+    "journal": "Frontiers in Chemistry",
+    "checked": "2026-11-19"
+  },
+  "gemini:journal of energy chemistry": {
+    "value": 14.0,
+    "journal": "Journal of Energy Chemistry",
+    "checked": "2026-11-19"
+  },
+  "gemini:journal of energy storage": {
+    "value": 8.9,
+    "journal": "Journal of Energy Storage",
+    "checked": "2026-11-19"
+  },
+  "gemini:journal of the electrochemical society": {
+    "value": 3.1,
+    "journal": "Journal of The Electrochemical Society",
+    "checked": "2026-11-19"
+  },
+  "gemini:nature communications": {
+    "value": 14.7,
+    "journal": "Nature Communications",
+    "checked": "2026-11-19"
+  },
+  "gemini:progress in materials science": {
+    "value": 33.6,
+    "journal": "Progress in Materials Science",
+    "checked": "2026-11-19"
+  },
+  "gemini:small": {
+    "value": 13.0,
+    "journal": "Small",
+    "checked": "2026-11-19"
+  },
+  "gemini:etransportation": {
+    "value": 15.0,
+    "journal": "eTransportation",
+    "checked": "2026-11-19"
+  }
+}
