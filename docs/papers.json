@@ -1,6 +1,38 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "papers": [
+    {
+      "doi": "10.1021/acsenergylett.6c02924",
+      "title": "From Nonstep to Step: Voltage‑Response‑Driven Interfacial Evolution and Closed‑Pore Sodium Filling in Hard Carbon Anode",
+      "journal": "ACS Energy Letters",
+      "issn": "2380-8195",
+      "published": "2026-11-16",
+      "authors": [
+        "Yining Lao",
+        "Yuecong Chen",
+        "Pengwei Jing",
+        "Ziqiang Fan",
+        "Jianing Meng",
+        "Pei Tang",
+        "et al."
+      ],
+      "abstract": "Abstract Hard carbon (HC) is regarded as the most commercially viable anode for sodium-ion batteries. However, during the initial discharge of the HC anode, the thick solid electrolyte interphase (SEI) derived from the decomposition of the ester-based electrolytes severely restricts sodium storage kinetics. Herein, we propose a customized discharge strategy that triggers a step voltage response (SR) in the HC anode to achieve rapid interfacial passivation. Through multiscale characterizations and theoretical calculations, we elucidate the underlying mechanism: the field-induced concentration effect within the interfacial electrolyte steers the decomposition pathways toward inorganic products, favoring the formation of a thin, uniform, and highly ionically conductive SEI. The accelerated interfacial kinetics significantly lowers the diffusion barrier, thereby enhancing the accessibility of closed pores for quasi-metallic sodium cluster storage. Consequently, the SR-treated HC anode delivers improved rate performance in both the sodium-ion full battery and hybrid capacitor. This study offers critical insights into the design of the formation protocol and provides a facile field-modulated strategy to enhance the sodium storage kinetics of the HC anode.",
+      "url": "https://doi.org/10.1021/acsenergylett.6c02924",
+      "citations": 0,
+      "score": 10,
+      "summary_ko": "스텝 전압 응답 방전으로 얇은 무기물 SEI를 유도해 확산 장벽을 낮추고 폐기공 Na 클러스터 충진을 촉진했다.",
+      "key_points": [
+        "스텝 전압 응답(SR) 방전 전략을 도입해 계면 반응 경로를 무기질 SEI 형성으로 유도",
+        "박막형 고이온전도성 SEI를 통해 확산 장벽을 낮춰 폐기공 준금속 Na 클러스터 충진 가속",
+        "계면 동역학 개선을 바탕으로 나트륨이온 전전지 및 하이브리드 커패시터 율속 특성 극대화"
+      ],
+      "why_read": "재료 합성 외에 포메이션(화성) 전압 프로토콜 제어로 폐기공 소듐 충진과 SEI를 획기적으로 개선한 참신한 연구입니다.",
+      "kind": "new",
+      "impact": 19.3,
+      "impact_source": "JCR 임팩트팩터(제미나이 답변, 추정)",
+      "added": "2026-11-20",
+      "id": "fromnonsteptostepvoltageresponsedriveninterfacialevolutionan"
+    },
     {
       "doi": "10.1016/j.est.2026.125529",
       "title": "Decoding the effect of bamboo precursor size on the microstructure and electrochemical behavior of hard carbon anodes for sodium-ion batteries",

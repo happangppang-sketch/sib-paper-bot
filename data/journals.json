@@ -63,5 +63,10 @@
     "value": 15.0,
     "journal": "eTransportation",
     "checked": "2026-11-19"
+  },
+  "gemini:acs energy letters": {
+    "value": 19.3,
+    "journal": "ACS Energy Letters",
+    "checked": "2026-11-20"
   }
 }
