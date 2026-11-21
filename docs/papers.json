@@ -1,6 +1,34 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "papers": [
+    {
+      "doi": "10.1177/02670836261508379",
+      "title": "Effect of morphology on the electrochemical properties of antimony/hard carbon composite anodes with barium titanate additives for sodium-ion batteries",
+      "journal": "Materials Science and Technology",
+      "issn": "0267-0836",
+      "published": "2026-11-19",
+      "authors": [
+        "Emre Cetin",
+        "Nisa Hacıoğlu",
+        "Ahmet Musab Beşbadem",
+        "Aiman al Maazabi",
+        "M. Taha Demirkan",
+        "Mehbare Doğrusöz",
+        "et al."
+      ],
+      "abstract": "The development of stable antimony-based anodes is critical for sodium-ion batteries due to the severe volume expansion and interfacial degradation of antimony during cycling. Herein, barium titanate-containing antimony/hard carbon composite anodes were prepared by ball milling and hand milling to clarify the role of additive content and morphology in determining electrochemical performance. X-ray diffraction confirmed the preservation of crystalline antimony and barium titanate phases, while scanning electron microscopy and energy-dispersive X-ray spectroscopy revealed more homogeneous particle distribution and barium/titanium dispersion in ball-milled electrodes. The ball-milled 10% barium titanate electrode exhibited lower charge-transfer resistance than the hand-milled counterpart and delivered approximately 290 mAh g −1 at the 100th cycle. These results indicate that controlled particle refinement and interfacial uniformity play a dominant role in improving antimony/hard carbon anode stability while the addition of 10–20% of barium titanate was shown to have a positive effect on electrochemical performance.",
+      "url": "https://doi.org/10.1177/02670836261508379",
+      "citations": 0,
+      "score": null,
+      "summary_ko": "",
+      "key_points": [],
+      "why_read": "",
+      "kind": "new",
+      "impact": null,
+      "impact_source": null,
+      "added": "2026-11-21",
+      "id": "effectofmorphologyontheelectrochemicalpropertiesofantimonyha"
+    },
     {
       "doi": "10.1021/acsenergylett.6c02924",
       "title": "From Nonstep to Step: Voltage‑Response‑Driven Interfacial Evolution and Closed‑Pore Sodium Filling in Hard Carbon Anode",
