@@ -1,6 +1,34 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "papers": [
+    {
+      "doi": "10.1007/s11581-026-07566-0",
+      "title": "Macadamia nut shell-derived nitrogen-doped hard carbon: boosting cycling stability and rate capability of sodium-ion batteries",
+      "journal": "Ionics",
+      "issn": "0947-7047",
+      "published": "2026-11-17",
+      "authors": [
+        "Shun Ji",
+        "Yujie Guo",
+        "Yanjia Zhang",
+        "Ziyi Zhu",
+        "Guangze Liu",
+        "Kai Ding",
+        "et al."
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1007/s11581-026-07566-0",
+      "citations": 0,
+      "score": null,
+      "summary_ko": "",
+      "key_points": [],
+      "why_read": "",
+      "kind": "new",
+      "impact": null,
+      "impact_source": null,
+      "added": "2026-11-22",
+      "id": "macadamianutshellderivednitrogendopedhardcarbonboostingcycli"
+    },
     {
       "doi": "10.1177/02670836261508379",
       "title": "Effect of morphology on the electrochemical properties of antimony/hard carbon composite anodes with barium titanate additives for sodium-ion batteries",
