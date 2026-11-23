@@ -1,6 +1,29 @@
 {
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "papers": [
+    {
+      "doi": "10.1007/s11581-026-07657-y",
+      "title": "Regulating microstructure of sucrose-derived hard carbon microspheres via carbonization temperature for high-performance sodium-ion storage",
+      "journal": "Ionics",
+      "issn": "0947-7047",
+      "published": "2026-11-23",
+      "authors": [
+        "Xue Lin",
+        "Pengfei Zhou"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.1007/s11581-026-07657-y",
+      "citations": 0,
+      "score": null,
+      "summary_ko": "",
+      "key_points": [],
+      "why_read": "",
+      "kind": "new",
+      "impact": null,
+      "impact_source": null,
+      "added": "2026-11-23",
+      "id": "regulatingmicrostructureofsucrosederivedhardcarbonmicrospher"
+    },
     {
       "doi": "10.1007/s11581-026-07566-0",
       "title": "Macadamia nut shell-derived nitrogen-doped hard carbon: boosting cycling stability and rate capability of sodium-ion batteries",
