@@ -1,6 +1,38 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "papers": [
+    {
+      "doi": "10.1002/advs.78919",
+      "title": "Beyond Decoupling: A Three‐Level Framework for High‐ICE Hard Carbon Anodes in Sodium‐Ion Batteries",
+      "journal": "Advanced Science",
+      "issn": "2198-3844",
+      "published": "2026-11-24",
+      "authors": [
+        "Hu Weijie",
+        "Pan Yanmi",
+        "Zhong Mingjian",
+        "Peng Zheng",
+        "Liang Guobin",
+        "Lin Jiamin",
+        "et al."
+      ],
+      "abstract": "ABSTRACT Low initial Coulombic efficiency (ICE) of hard carbon anodes constrains the first‐cycle energy efficiency and gravimetric energy density of sodium‐ion full cells. Existing reviews typically classify ICE‐improvement strategies into intrinsic structural regulation, surface/interface engineering, and presodiation compensation. This work recasts structural regulation and active‐sodium compensation into a structure‐coupling, decoupling‐tolerance framework that links reversible sodium storage and irreversible sodium loss through structural features, ion accessibility, and interfacial reaction conditions. A given local structure exhibits distinct sodium occupancy, charge distribution, and interfacial reactivity across potential, electrolyte composition, and cycling stage, so its reversibility is governed jointly by local free energy and kinetic accessibility; however, insufficient causal validation limits the framework's predictive power. This review systematically examines three irreversible sodium‐loss pathways, SEI formation, intrinsic defect trapping, and open‐pore side reactions, analyzes their multiscale coupling, and discusses the efficacy boundaries of the three strategy families. A three‐level framework is proposed, comprising bulk competition, interface reaction, and system optimization, built on a competitive sodium‐storage‐site model, an interface‐stability regulation model, and a multi‐objective collaborative optimization model. Combined with standardized evaluation, full‐cell validation, and a data‐driven platform, a progressive validation path establishes quantifiable, testable, and iterative design language for hard‐carbon ICE research.",
+      "url": "https://doi.org/10.1002/advs.78919",
+      "citations": 0,
+      "score": 9.5,
+      "summary_ko": "하드카본 음극의 비가역 손실 경로를 분석하고 벌크·계면·시스템 수준의 고ICE 달성 프레임워크를 제안한 총설.",
+      "key_points": [
+        "SEI 형성, 고유 결함 포획, 개기공 부반응의 3대 비가역 손실 규명",
+        "벌크 경쟁, 계면 반응, 시스템 최적화의 3단계 설계 프레임워크 제안",
+        "경쟁적 나트륨 저장 모델 기반 풀셀 검증 및 데이터 기반 접근법 제시"
+      ],
+      "why_read": "하드카본의 낮은 ICE 문제를 근본적인 메커니즘부터 체계적으로 극복하는 이론적 틀을 제시합니다.",
+      "kind": "new",
+      "impact": 14.3,
+      "impact_source": "JCR 임팩트팩터(제미나이 답변, 추정)",
+      "added": "2026-11-26",
+      "id": "beyonddecouplingathreelevelframeworkforhighicehardcarbonanod"
+    },
     {
       "doi": "10.1016/j.est.2026.125897",
       "title": "Pre-oxidation coupled with zinc carbonate hydroxide templating for asphalt-derived hard carbon anodes in sodium-ion batteries",
@@ -75,8 +107,8 @@
       "key_points": [],
       "why_read": "",
       "kind": "new",
-      "impact": null,
-      "impact_source": null,
+      "impact": 2.4,
+      "impact_source": "JCR 임팩트팩터(제미나이 답변, 추정)",
       "added": "2026-11-23",
       "id": "regulatingmicrostructureofsucrosederivedhardcarbonmicrospher"
     },
@@ -103,8 +135,8 @@
       "key_points": [],
       "why_read": "",
       "kind": "new",
-      "impact": null,
-      "impact_source": null,
+      "impact": 2.4,
+      "impact_source": "JCR 임팩트팩터(제미나이 답변, 추정)",
       "added": "2026-11-22",
       "id": "macadamianutshellderivednitrogendopedhardcarbonboostingcycli"
     },
@@ -131,8 +163,8 @@
       "key_points": [],
       "why_read": "",
       "kind": "new",
-      "impact": null,
-      "impact_source": null,
+      "impact": 2.7,
+      "impact_source": "JCR 임팩트팩터(제미나이 답변, 추정)",
       "added": "2026-11-21",
       "id": "effectofmorphologyontheelectrochemicalpropertiesofantimonyha"
     },

@@ -68,5 +68,20 @@
     "value": 19.3,
     "journal": "ACS Energy Letters",
     "checked": "2026-11-20"
+  },
+  "gemini:advanced science": {
+    "value": 14.3,
+    "journal": "Advanced Science",
+    "checked": "2026-11-26"
+  },
+  "gemini:ionics": {
+    "value": 2.4,
+    "journal": "Ionics",
+    "checked": "2026-11-26"
+  },
+  "gemini:materials science and technology": {
+    "value": 2.7,
+    "journal": "Materials Science and Technology",
+    "checked": "2026-11-26"
   }
 }
