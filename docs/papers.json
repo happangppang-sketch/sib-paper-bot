@@ -1,6 +1,36 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "papers": [
+    {
+      "doi": "10.1002/ange.9097834",
+      "title": "Coking–Crosslinking Competition Shapes Alveolar Hard Carbon Formation From Heterogeneous Precursors for Wide‐Temperature Sodium Storage",
+      "journal": "Angewandte Chemie",
+      "issn": "0044-8249",
+      "published": "2026-11-16",
+      "authors": [
+        "Yuhan Liu",
+        "Hao Yang",
+        "Qianxun Li",
+        "Zhenghe Xu",
+        "Chao Yang"
+      ],
+      "abstract": "ABSTRACT Competing with lithium‐ion technology on cost and resource abundance requires sodium‐ion batteries to use hard‐carbon anodes produced from abundant, inexpensive feedstocks without sacrificing structural control. Yet the natural and residual feedstocks that meet these requirements are typically chemically heterogeneous. Competing transformations among their constituent fractions before high‐temperature treatment make the carbonization pathway and carbon architecture difficult to predict and direct. Here, controlled fraction removal and reintroduction reveal a new mechanism whereby coking‐crosslinking competition selects the carbonization pathway. Surface coking blocks oxygen access and suppresses bulk crosslinking, whereas low‐temperature pre‐purification removes coking‐prone fractions, preserving an oxygen‐accessible skeleton that forms alveolar hard carbon (AHC). Operando x‐ray diffraction (XRD)/Raman and synchrotron x‐ray absorption near‐edge structure (XANES) establish that the low‐potential plateau arises from reversible formation of highly reduced sodium species within confined pores. AHC‐120@15‐1400 delivers 388.3 mAh g −1 with 91.3% initial Coulombic efficiency (ICE), retains 94.3% capacity after 10 500 cycles at 4 A g −1 , and operates from −25°C to 45°C. A 1.2 Ah pouch cell retains 82.5% capacity after 1,000 cycles, while the route lowers cradle‐to‐gate material‐resource impact by 35.6% relative to commercial hard‐carbon production. Controlling coking‐crosslinking competition establishes a pathway‐selective design principle for converting heterogeneous carbon resources into durable, wide‐temperature sodium‐storage carbons.",
+      "url": "https://doi.org/10.1002/ange.9097834",
+      "citations": 0,
+      "score": 10,
+      "summary_ko": "코킹-가교 경쟁 제어로 폐포형 하드카본을 합성해 용량 388.3 mAh/g, ICE 91.3%, 초장수명을 달성.",
+      "key_points": [
+        "불균일 전구체의 코킹-가교 반응 경쟁 제어로 폐포형 하드카본 형성",
+        "용량 388.3 mAh/g, ICE 91.3%, 4 A/g 10500사이클 후 94.3% 유지",
+        "-25°C~45°C 구동 및 1.2 Ah 파우치셀 1000사이클 82.5% 입증"
+      ],
+      "why_read": "저가 원료의 탄화 경로를 정밀 제어해 고용량·초고ICE·광범위 온도 구동을 모두 실현한 최상급 논문으로 필독을 권합니다.",
+      "kind": "new",
+      "impact": 16.1,
+      "impact_source": "JCR 임팩트팩터(제미나이 답변, 추정)",
+      "added": "2026-11-27",
+      "id": "cokingcrosslinkingcompetitionshapesalveolarhardcarbonformati"
+    },
     {
       "doi": "10.1002/advs.78919",
       "title": "Beyond Decoupling: A Three‐Level Framework for High‐ICE Hard Carbon Anodes in Sodium‐Ion Batteries",
