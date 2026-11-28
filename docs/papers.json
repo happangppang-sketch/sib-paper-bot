@@ -1,6 +1,38 @@
 {
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "papers": [
+    {
+      "doi": "10.1002/ange.5975631",
+      "title": "A Scalable Presodiation Strategy Enabling Dry‐Air‐Processable Hard Carbon Anodes for High Energy Sodium‐Ion Batteries",
+      "journal": "Angewandte Chemie",
+      "issn": "0044-8249",
+      "published": "2026-11-16",
+      "authors": [
+        "Fujun Niu",
+        "Zhijian Cai",
+        "Zhengwei Li",
+        "Xiangpeng Kong",
+        "Yifan Tang",
+        "Huai Chen",
+        "et al."
+      ],
+      "abstract": "ABSTRACT Hard carbon (HC) anodes hold promise for sodium‐ion batteries but are plagued by low initial Coulombic efficiency (ICE) stemming from irreversible sodium sequestration. Chemical presodiation offers a direct route to compensate this deficit, yet its translation to high‐loading electrodes is crippled by sluggish mass transport and air sensitivity of the sodiated product, a barrier to scalable manufacturing. Here, we break this impasse by synchronizing acoustic field enhanced transport with in situ interfacial engineering. Ultrasound‐driven microconvection and cavitation overcome diffusion limitations within thick electrodes, delivering ∼100% ICE within one minute, approximately twice as fast as conventional immersion. A five second quenching in sodium difluoro(oxalato)borate constructs a B/F‐rich hybrid interphase that not only passivates the highly reactive sodiated surface against dry‐air degradation, retaining >79% ICE after 6 h exposure, but also selfregulates subsequent solid‐electrolyte interphase evolution, suppressing impedance growth and stabilizing charge transfer kinetics. Practical pouch cells deliver 76% capacity retention over 700 cycles at 0.5 C/1 C and exhibit superior wide‐temperature adaptability from −40°C to 55°C. By resolving the coupled bottlenecks of kinetic inhomogeneity and environmental instability, this work establishes a scalable, dry‐air‐compatible presodiation paradigm that bridges the gap between laboratory innovation and industrial battery manufacturing.",
+      "url": "https://doi.org/10.1002/ange.5975631",
+      "citations": 0,
+      "score": 9.5,
+      "summary_ko": "초음파 사전나트륨화로 1분 내 ICE ~100%를 달성하고 건조공기 6시간 후에도 >79%를 유지한 고로딩 음극 기술.",
+      "key_points": [
+        "초음파 미세대류 기술로 후막 전극에서 1분 이내 초기효율 ~100% 달성",
+        "NaDFOB 5초 담금 처리로 내공기성 B/F 하이브리드 보호 계면 구축",
+        "파우치 풀셀 0.5C/1C에서 700사이클 후 76% 용량 유지 확인"
+      ],
+      "why_read": "하드카본의 고질적인 낮은 ICE 문제를 양산 공정 수준(건조 공기 안정성 확보)에서 해결한 혁신적인 연구입니다.",
+      "kind": "new",
+      "impact": 16.1,
+      "impact_source": "JCR 임팩트팩터(제미나이 답변, 추정)",
+      "added": "2026-11-28",
+      "id": "ascalablepresodiationstrategyenablingdryairprocessablehardca"
+    },
     {
       "doi": "10.1002/ange.9097834",
       "title": "Coking–Crosslinking Competition Shapes Alveolar Hard Carbon Formation From Heterogeneous Precursors for Wide‐Temperature Sodium Storage",
